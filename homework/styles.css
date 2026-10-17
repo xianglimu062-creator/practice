@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    margin: 10px;
+}
+
+p {
+    margin: 10px;
+}
+
+form {
+    max-width: 1300px;
+    margin: 10px;
+}
+
+.form-item {
+    margin-bottom: 8px;
+}
+
+
+fieldset {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+
+legend {
+    font-size: 14px;
+}
+
+.label-text {
+    display: inline-block;
+    width: 150px;
+}
+
+.colon {
+    display: inline-block;
+    width: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 200px;
+    padding: 3px 4px;
+}
+
+input[type="date"] {
+    width: 140px;
+    padding: 3px 4px;
+}
+
+#age {
+    width: 80px;
+    padding: 3px 4px;
+}
+
+.password-message p {
+    margin: 1px;
+}
+
+.magazine label {
+    display: flex;
+}
+
+a {
+    font-size: 13px;
+}
+
+.rule label {
+    display: flex;
+}
+
+button {
+    font-size: 14px;
+}

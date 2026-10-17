@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <p>必要事項を入力の上、送信ボタンを押してください。</p>
+    </header>
+    <form action="" method="post">
+        <div class="form-group">
+            <div class="item">
+                <p>ID</p>
+                <small><span class="required">必須</span>（メールアドレス）</small>
+            </div>
+            <div class="enter">
+                <label for="email">
+                    <input type="email" name="email" id="email" placeholder="例：xxx@morijyobi.ac.jp">
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="item">
+                <p>パスワード</p>
+                <small><span class="required">必須</span>（半角英数字8文字以上）</small>
+            </div>
+            <div class="enter">
+                <label for="password">
+                    <input type="password" name="password" id="password">
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="item">
+                <p>氏名</p>
+                <small><span class="required">必須</span></small>
+            </div>
+            <div class="enter">
+                <div class="name">
+                    <label for="name">性：
+                        <input type="text" name="name" id="name" placeholder="例：盛岡">
+                    </label>
+                    <label for="name">名：
+                        <input type="text" name="name" id="name" placeholder="例：太郎">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="item">
+                <p>住所</p>
+            </div>
+            <div class="enter">
+                <div class="address-form">
+                    <label for="address">〒
+                        <input type="text" name="address" id="address" placeholder="020-0021">
+                    </label>
+                </div>
+                <div class="address-form">
+                    <label for="address1">
+                        <input type="text" name="address1" id="address1" placeholder="岩手県盛岡市中央通り3丁目">
+                    </label>
+                </div>
+                <div class="address-form">
+                    <label for="address2">
+                        <input type="text" name="address2" id="address2" placeholder="番地">
+                    </label>
+                </div>
+                <div class="address-form">
+                    <label for="address3">
+                        <input type="text" name="address3" id="address3" placeholder="建物名">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="item">
+                <p>携帯電話番号</p>
+                <small><samp class="required">必須</samp>（ハイフンなし）</small>
+            </div>
+            <div class="enter">
+                <label for="trl">
+                    <input type="tel" name="tel" id="tel">
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="item">
+                <p>学科・学年</p>
+                <small><samp class="required">必須</samp></small>
+            </div>
+            <div class="enter">
+                <div class="select-group">
+                    <span>学科:
+                        <select>
+                            <option>学科を選択してください</option>
+                        </select>
+                    </span>
+                    <span>学年:
+                        <select>
+                            <option>学年を選択してください</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="item">
+                <p>お得な情報・クーポン</p>
+                <small><samp class="required">必須</samp></small>
+            </div>
+            <div class="enter">
+                <div class="radio">
+                    <label for="radio-yes">
+                        <input type="radio" name="send" id="send-yes">受け取る
+                    </label>
+                    <label for="radio-no">
+                        <input type="radio" name="send" id="send-no">受け取らない
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="item">
+                <p>ご意見・ご要望</p>
+                <small>(200文字以内にお書きください)</small>
+            </div>
+            <div class="enter">
+                <label for="survey">
+                    <textarea name="survey" id="survey"></textarea>
+                </label>
+            </div>
+        </div>
+    </form>
+    <button type="reset">入力をクリアする</button>
+    <button type="submit" class="btn-submit">送信</button>
+</body>
+
+</html>
