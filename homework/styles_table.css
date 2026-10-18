@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin: 10px;
+
+}
+
+form {
+    margin: 10px;
+}
+
+table {
+    width: 800px;
+    border-collapse: collapse;
+    border: 2px solid white;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+}
+
+th,
+td {
+    border: 1px solid white;
+    padding: 10px 10px;
+}
+
+th {
+    background-color: gray;
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    max-width: 250px;
+    vertical-align: top;
+}
+
+td {
+    background-color: rgb(197, 194, 194);
+    max-width: 400px;
+}
+
+.required{
+    font-size: 10px;
+    background-color: red;
+    border-radius: 5px;
+    padding: 1px 2px;
+}
+
+small {
+    font-size: 10px;
+}
+
+.text-input {
+    width: 180px;
+    padding: 2px 0px;
+}
+
+.text-small {
+    width: 80px;
+    padding: 2px 0px;
+    background-color: grey;
+}
+
+.text-back {
+    width: 180px;
+    padding: 2px 0px;
+    background-color: gray;
+}
+
+.text-large {
+    width: 300px;
+    padding: 2px 0px;
+}
+
+.text-small::placeholder,
+.text-back::placeholder {
+    color: black;
+}
+
+textarea{
+    width: 400px;
+    height: 200px;
+}
+
+button {
+    font-size: 15px;
+    padding: 3px 14px;
+    margin-top: 3px;
+}

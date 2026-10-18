@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_table.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <p>必須事項を入力の上、送信ボタンを押してください。</p>
+    </header>
+    <main>
+        <form action="">
+            <table>
+                <tbody>
+                    <tr>
+                        <th scope="row">ID<span class="required">必須</span><small>(メールアドレス)</small></th>
+                        <td><input type="email" placeholder="例：xxx@moriyobi.ac.jp" class="text-input"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">パスワード<span class="required">必須</span><small>(半角英数字8文字以上)</small></th>
+                        <td>
+                            <input type="text" class="text-input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">氏名<span class="required">必須</span></th>
+                        <td>
+                            性:<input type="text" placeholder="例:盛岡" class="text-input">
+                            名:<input type="text" placeholder="例:太郎" class="text-input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">住所</th>
+                        <td>
+                            <div>
+                                〒<input type="text" placeholder="020-0021" class="text-small">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="岩手県盛岡市中央通り3丁目" class="text-back">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="番地" class="text-input">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="建物名" size="30px" class="text-large">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">携帯電話番号<span class="required">必須</span><small>(ハイフンなし)</small></th>
+                        <td>
+                            <input type="tel" class="text-input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">学科・学年<span class="required">必須</span></th>
+                        <td>
+                            <label for="course">学科:</label>
+                            <select id="course" name="favorite_course">
+                                <option value="">学科を選択してください</option>
+                                <option value="art">美術科</option>
+                                <option value="music">音楽科</option>
+                                <option value="sports">体育科</option>
+                            </select>
+                            <label for="class">学年:</label>
+                            <select id="class" name="favorite_class">
+                                <option value="">学年を選択してください</option>
+                                <option value="1">1年</option>
+                                <option value="2">2年</option>
+                                <option value="3">3年</option>
+                            </select>
+                    </tr>
+                    <tr>
+                        <th scope="row">お得な情報・クーポン<span class="required">必須</span></th>
+                        <td>
+                            <div class="radio-group">
+                                <label for="">
+                                    <input type="radio" id="coupon" value="yes">受け取る
+                                </label>
+                                <label for="">
+                                    <input type="radio" id="coupon" value="no">受け取らない
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">ご意見・ご要望<small>(200文字以内にお書きください)</small></th>
+                        <td>
+                            <textarea name="questionnaire"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="reset">入力をクリアする</button>
+            <button type="submit">送信</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
