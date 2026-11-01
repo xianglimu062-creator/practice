@@ -1,0 +1,143 @@
+
+/* cssは上から順に、そのためmarginなどは後から書いたものに上書きしてくれる感じ */
+/* デフォルトのマージン・パディングを全体適応で消す */
+*{
+    /* 外側の余白 */
+    margin: 0;
+    /* 内側の余白 */
+    padding: 0;
+
+}
+
+p{
+    /* 要素の外側に余白を作るプロパティ */
+    margin: 20px;
+}
+
+h1{
+
+    
+    font-size: 10px;
+    /* 色選択でホバーした方がやりやすい */
+    background-color: rgb(175, 255, 228, );
+    background-color: rgba(240, 248, 255, 0.642);
+    /* その要素の外側を指定しているから外側だけつく */
+    margin: 10px;
+    /* 中の要素を広げる */
+    padding: 10px;
+    /* 要素の範囲より大きい文字とかだと入りきらなくて縦書きに見えることがある */
+    width: 200px;
+    height: 200px;
+    /* 文字のサイズに合わせて枠がある感じ */
+    width: fit-content;
+
+    /* ワイドが画面のサイズに合わせて要素が変わるもの これ以下のサイズにならないで*/
+    min-width: 100px;
+    /* 上記同様、これ以上大きくならないで */
+    max-width: 180px;
+
+}
+
+
+/* 真ん中寄せにしたい時、要素pxを決めて、margin:auto */
+p{
+    margin: 200px;
+    padding: 200px;
+    /* ピクセル数、solid、カラーで大体まる */
+    border: 3px solid blue;
+    /* アンダーライン */
+    text-decoration: underline;
+}
+
+/* ホバーした時にどんなCSSつけたいか、色とかキーを手の形にするとか */
+p:hover{
+    cursor: pointer;
+}
+
+
+/* aタグはmargin:aoutが効かないかもしれない、、、devで囲ってあげる必要あるかも？？ */
+/* 初めてのリンク先は青だけど、遷移した後は紫になる */
+a{
+    color: aquamarine;
+    /* アンダーラインが消える */
+    text-decoration: none;
+    
+}
+
+/* 訪れた後の色変更 */
+a.visited{
+    color: aqua;
+}
+
+
+/* classe名をつけたい時 .をつける*/
+.{
+}
+
+
+span{
+    background-color: blueviolet;
+    /* 文字の太さを変えられる */
+    font-weight: 200;
+}
+
+/* 時計のはりをイメージして、上右下左の順番 */
+.flex{
+    margin: 20px 20px 20px 20px;
+
+    /* 直下にある要素をインライン要素にしてくれるから、横並びになる */
+    display: flex;
+    /* 親要素に対して上にも下にも間隔が開く、真ん中寄せしたい */
+    /* flexが親に対してないとcss聞かない */
+    align-items: center;
+}
+
+/* 上記はclass flexにしかかからない。その中の要素にcssをもたせたいときはclass名にdivをつける */
+.flex div{
+    /* 要素を恥にする */
+    justify-content: space-between;
+    /* 1対2分の１で間隔を入れる.真ん中が１、要素の隣が2分の１ */
+    justify-content: space-around;
+    /* 全ての間隔が均等になる */
+    justify-content: space-evenly;
+}
+
+/* divタグは中の要素にしか聞かないことを考慮して、cssを効かせたいところをdivで囲う */
+/* margin:aout の使い方を実践的に学ぶ必要*/
+/* flexを使っていないときはmargin */
+
+/* 背景に画像を差し込みたいとき */
+.flex{
+    background-image: url();
+    /* イメージをセンターにしたいとき */
+    background-position: center;
+    /* リピートしたいとき */
+    background-repeat: no-repeat;
+    /* 要素に対してフィルターをかけてくれる感じ。ホバーした時とかに使う */
+    opacity: 20px;
+}
+
+/* 最初の設定で綺麗にしてあげてるから、marginとかないとまるポチ消える */
+ul{
+    /* まるぽち消したい時とかにしていしてあげる */
+    list-style: none;
+}
+
+header{
+    display: flex;
+    background-color: aliceblue;
+    /* 四角の角を取ってくれる */
+    border-radius: 20%;
+    /* スクロールしてもヘッダーがついてくるやつ これだけでは機能しない*/
+    position: relative;
+    /*  */
+    position: fixed;
+}
+
+header h1{
+    position: absolute;
+    /* 画像とかテキストを基準として重ねるデザインとかにしたい時 */
+    /* headerが基準になっている。　上記のheaderクラスのposition: relativeが元になっている */
+    top: 20px;
+    left: 20px;
+}

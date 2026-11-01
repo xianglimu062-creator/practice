@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- ブラウザによっては全部同じ大きさのこともある -->
+    <h1>見出し</h1>
+    <h2></h2>
+    <h3></h3>
+
+    <p>テキスト</p>
+    <!-- spanはどこでも使える。特定の要素に対して何かしたい時-->
+    <p>テキ <span>スト</span></p>
+
+    <!-- tagetありだと別タブで開くことができる・無しだとページ内での遷移-->
+    <a href="taget">Urlの遷移</a>
+    <!-- #でidを付与できる。aタグにidをつけると、その場所まで戻ってくる仕組みになる-->
+    <a href="#midasi"></a>
+    <!-- aタグはブロック要素が文字の大きさと等しいから、横並びになる（インライン要素同士のため） -->
+    <!-- インライン要素とブロック要素はcssで何かしないと横並びになることはない -->
+    
+    
+    <br>改行
+
+    <div>cssの要素で扱いやすい。ブロック要素にできる能力</div>
+    <div>例えばaタグはインライン要素だから横並びになる。
+         divで囲えばブロック要素になって横並びにならない。</div>
+
+    <ul>
+        <li>リスト</li>
+        <li>これはulとセット</li>
+        <li>aタグを使用する時にはliで囲ってあげなきゃいけない</li>
+        <li>丸ポチです</li>
+    </ul>
+
+    <ul>
+        <ol>リスト</ol>
+        <ol>番号です</ol>
+    </ul>
+
+
+    <!-- この中には入力させたいものを記述します -->
+    <form action="遷移したいURL" method="getかpostか">
+
+        <label>このタグはinputタグとセットにして欲しいインライン要素</label>
+        <div>このタグはブロック要素</div>
+
+        <!-- インライン要素のinput テキストを打ち込める-->
+        <input type="text">
+        <!-- 数字だけ打ち込み可能、右にトグルが出てくる -->
+        <input type="number">
+
+        <input type="value"編集の時とかここに文字が入る">
+
+        <input type="placeholder"薄い文字で「何を書いてください」とかの指示がある">
+
+        <input type="password"打ち込んだ時に見えなくしてくれる>
+
+        <!-- ラベルタグの中に入っているinputものはforの名前と合わせなくても継承してくれる -->
+        <label for="">名前：
+            <!-- required 必須条件の時に使う。これは単体なので””いらない -->
+            <input type="text" required>
+        </label>
+
+        <!-- forでid名を決めてidで指定してあげる -->
+        <label for="name2">フルネーム：</label>
+        <!-- readoly 必須条件と同じ感じ。あまり使わないけど、読み込みだけさせたい時に使う -->
+        <input id="id" type="text" placeholder="山田" readonly>
+
+
+        <legend>ラベルが複数要素あって囲みたい,,ちょっとした見出し
+            性別
+          <label for="">
+                男性
+            <!-- radioボタン　性別をボタンを押させて判定する時とかどれか一つに使う -->
+             <input id="" name="gender" type="radio">
+          </label>
+          <!-- 後続して女性、未回答とかもある -->
+        </legend>
+        <!-- チェックボックスでチェックできる。valueで番号を振って挙げて、BEで受け取ることが多いnameとvalue番号-->
+        <input type="checkbox" name="" value="">
+
+        <!-- 画像 -->
+        <label for="">
+            <input type="file">
+        </label>
+        <!-- カレンダー -->
+        <label for="">
+            <input type="date">
+        </label>
+
+        <!-- 電話番号 -->
+        <label for="">
+            <input type="tel">
+        </label>
+
+
+
+        <!-- ボタン・サブミットにはvalueに文字を書くことが多い。実際に押すことができるのはsubmit -->
+        <label for="">
+            <input type="submit" value="送信">
+            <input type="button" value="クリア">
+        </label>
+
+        <!-- formの中に入っていないと削除とかの機能が使えない -->
+        <button type="button">ボタン</button>
+        <button type="reset">クリア(入力したものは消せる・valueは消せない)</button>
+        <button type="submit">送信</button>
+
+        <label for="">
+            <!-- 長い文章を書かせたい時に使う。感想・意見とかに使うことが多い -->
+            <textarea name="" id=""></textarea>
+        </label>
+
+        <!-- inputタグはformの中じゃないと機能できないから、外に書くこともできるけど基本的には出さないよね〜〜 -->
+        
+        <!-- 選択肢を出したい時に使う。optionと必ずセット -->
+         <!-- これもformの中-->
+        <select name="" id="">
+            <option value=""></option>
+        </select>
+
+
+    </form>
+
+    <!-- 構造的に見やすくするための、わかりやすい基準 -->
+    <header>
+        <nav>目次のような</nav>
+    </header>
+
+    <main>
+        <section>セクションごとに区切ると見やすいよ</section>
+    </main>
+    <footer>
+        <!-- 文字をちっちゃく -->
+        <small>&copy;</small>
+    </footer>
+
+
+    <!-- テーブルタグはtr/thで囲わないといけない -->
+    <table>
+        <thead>
+            <th>強調したい名前 「名前」</th>
+        </thead>
+        <tbody>
+            <th>「名前」の中の要素名「幸子」</th>
+        </tbody>
+    </table>
+
+    <table border="1">このように書くと表で作ることができる</table>
+    <tr>このタグは横にアプローチしてくれるタグ</tr>
+
+    <!-- インライン要素 -->
+    <img src="" alt="">
+    divと一緒に使うよよく
+
+
+    <!-- フィールドセット -->
+  <fieldset>
+    <legend>好きなモンスターを選んでください</legend>
+
+    <input type="radio" id="kraken" name="monster" value="K" />
+    <label for="kraken">クラーケン</label><br />
+
+    <input type="radio" id="sasquatch" name="monster" value="S" />
+    <label for="sasquatch">サスカッチ</label><br />
+</body>
+
+</html>

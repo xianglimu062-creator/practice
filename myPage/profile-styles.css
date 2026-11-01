@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgba(194, 194, 194, 0.678);
+}
+
+.fixed {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    /* ulを右端に配置 */
+    align-items: flex-start;
+    font-size: 30px;
+    max-width: 1440px;
+    box-sizing: border-box;
+}
+
+.fixed img {
+    width: 1440px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+.my-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.461);
+    display: flex;
+    margin: 10px 0px;
+    padding: 10px 10px;
+    list-style: none;
+    align-self: flex-start;
+    /* 右上配置 */
+}
+
+.my-menu li a {
+    font-family: 'Noto Serif JP', sans-serif;
+    margin: 10px;
+    padding: 50px;
+    text-decoration: none;
+    /* 下のマーカーを消す */
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.foreword {
+    margin: 200px 0px;
+    padding: 60px 0px;
+}
+
+.foreword p {
+    font-family: 'Noto Serif JP', sans-serif;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+table {
+    /* 線を重ねる */
+    border-collapse: collapse;
+    width: 1440px;
+    height: 660px;
+    margin: 100px 0px;
+}
+
+td {
+    width: 360px;
+    height: 660px;
+    background-attachment: fixed;
+
+}
+
+.fast {
+    background-image: url(/Users/k119/practice/myPage/image/霧の中の太陽.webp);
+       background-size: 100%;
+       background-position: top;
+}
+
+.Second {
+    background-image: url(/Users/k119/practice/myPage/image/ヴェトゥイユの画家の庭.jpg);
+       background-size: 50%;
+       background-position: center;
+}
+
+.third {
+    background-image: url(/Users/k119/practice/myPage/image/ひまわり.jpg);
+       background-size: 50%;
+       background-position: center;
+}
+
+.fourth {
+    background-image: url(/Users/k119/practice/myPage/image/モンソー公園.jpg);
+    background-position: top;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    max-width: 1440px;
+    margin: 260px 200px;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-weight: normal;
+}
+
+.information img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.name,
+.star-sign,
+.mbti,
+.like,
+.forte {
+    margin: 15px 0px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: black;
+}

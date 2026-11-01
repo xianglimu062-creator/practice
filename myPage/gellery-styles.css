@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgba(194, 194, 194, 0.678);
+}
+
+.fixed {
+    display: flex;
+    justify-content: right;
+    /* ulを右端に配置 */
+    align-items: flex-start;
+    font-size: 30px;
+    max-width: 1440px;
+    box-sizing: border-box;
+}
+
+.my-menu {
+    align-self: flex-start;
+    display: flex;
+    list-style: none;
+    margin: 10px 0px;
+    padding: 10px 10px;
+}
+
+.my-menu li a {
+    font-family: 'Noto Serif JP', sans-serif;
+    margin: 10px;
+    padding: 50px;
+    /* 下のマーカーを消す */
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.contents {
+    margin: 150px 100px;
+    padding: 0px 80px;
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    align-items: center;
+}
+
+.contents img {
+    width: 500px;
+    height: 400px;
+    /* 画像が歪まないようにフィットさせる */
+    object-fit: cover;
+}
+
+.name {
+    font-family: 'Noto Serif JP', sans-serif;
+
+}
+
+.text {
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+h3 {
+    margin: 40px 0px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
